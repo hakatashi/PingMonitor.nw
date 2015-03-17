@@ -1,0 +1,26 @@
+{
+  "name": "PingMonitor.nw",
+  "main": "index.js",
+  "version": "0.0.0",
+  "homepage": "https://github.com/hakatashi/PingMonitor.nw",
+  "authors": [
+    "hakatashi <hakatasiloving@gmail.com>"
+  ],
+  "description": "Graphical ping monitor",
+  "keywords": [
+    "ping",
+    "monitor"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "svg.js": "~1.0.1"
+  }
+}

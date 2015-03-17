@@ -1,7 +1,14 @@
 html
 	head
 		title PingMonitor.nw
+		script(src='bower_components/svg.js/dist/svg.js')
 		script(src='index.js')
 		link(rel='stylesheet', href='index.css')
+		meta(name='viewport', content='width=device-width')
 	body
-		svg
+		div#graph-wrap
+			svg#graph
+				g#background
+					for i in [0, 1, 2, 3]
+						rect(x='0', y=i*25+'%', width='100%', height='25%')
+		p#status offline

@@ -35,7 +35,7 @@ module.exports = function(grunt) {
 		},
 		shell: {
 			nw: {
-				command: 'nw src',
+				command: 'nw --remote-debugging-port=9222 src',
 			},
 		},
 	});
