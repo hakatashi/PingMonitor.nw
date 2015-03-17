@@ -1,0 +1,30 @@
+{
+  "name": "PingMonitor.nw",
+  "version": "0.0.0",
+  "description": "Graphical ping monitor",
+  "main": "src",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "hakatashi <hakatasiloving@gmail.com> (http://hakatashi.com/)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hakatashi/PingMonitor.nw.git"
+  },
+  "keywords": [
+    "ping",
+    "monitor",
+    "nw.js"
+  ],
+  "bugs": {
+    "url": "https://github.com/hakatashi/PingMonitor.nw/issues"
+  },
+  "homepage": "https://github.com/hakatashi/PingMonitor.nw",
+  "devDependencies": {
+    "grunt-contrib-jade": "^0.14.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-shell": "^1.1.2"
+  }
+}
