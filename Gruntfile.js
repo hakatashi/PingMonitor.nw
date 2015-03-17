@@ -2,16 +2,29 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 	    pkg: grunt.file.readJSON('package.json'),
 		jade: {
-			build: {
+			all: {
 				files: [
 					{
 						expand: true,
-						cwd: '.',
+						cwd: 'src',
 						src: ['**/*.jade'],
-						dest: '.',
+						dest: 'src',
 						ext: '.html',
-					}
-				]
+					},
+				],
+			},
+		},
+		less: {
+			all: {
+				files: [
+					{
+						expand: true,
+						cwd: 'src',
+						src: ['**/*.less'],
+						dest: 'src',
+						ext: '.css',
+					},
+				],
 			},
 		},
 		watch: {
@@ -28,8 +41,9 @@ module.exports = function(grunt) {
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-jade');
+	grunt.loadNpmTasks('grunt-contrib-less');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-shell');
 
-	grunt.registerTask('default', ['jade:build', 'shell:nw']);
+	grunt.registerTask('default', ['jade:all', 'less:all', 'shell:nw']);
 };
