@@ -35,7 +35,7 @@ module.exports = function(grunt) {
 		},
 		shell: {
 			nw: {
-				command: 'nw --remote-debugging-port=9222 src',
+				command: '"C:\\Program Files (x86)\\node-webkit\\nw.exe" --remote-debugging-port=9222 src',
 			},
 		},
 	});
