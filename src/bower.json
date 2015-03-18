@@ -21,6 +21,6 @@
     "tests"
   ],
   "dependencies": {
-    "svg.js": "~1.0.1"
+    "snap.svg": "~0.3.0"
   }
 }
